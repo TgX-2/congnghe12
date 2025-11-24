@@ -6,7 +6,7 @@
 - [Cấu trúc](#cấu-trúc)
 - [Cài đặt](#cài-đặt)
 - [Đóng góp](#đóng-góp)
-- [Liên hệ](#-liên-hệ)
+- [Liên hệ](#liên-hệ)
 
 ## **Mô tả**
 
@@ -21,7 +21,7 @@
 ---
 
 ## **Cấu trúc**
-
+```
 congnghe12
 ├── .git
 ├── README.md
@@ -41,7 +41,7 @@ congnghe12
 │   ├── thuchanh.html
 │   └── transistor.html
 └── support
-
+```
 
 ## **Cài đặt**
 Hướng dẫn cài đặt:
@@ -65,9 +65,9 @@ index.html
 ## **Đóng góp**
 Chúng tớ hoan nghênh các đóng góp:
 1. Fork
-2. Tạo branch mới (git checkout -b support/newdonggop)
-3. Commit thay đổi (git commit -m 'DangTranPhuocThaiLaGay + Mô tả thay đổi')
-4. Push lên branch (git push origin support/newdonggop)
+2. Tạo branch mới `(git checkout -b support/newdonggop)`
+3. Commit thay đổi `(git commit -m 'DangTranPhuocThaiLaGay + Mô tả thay đổi')`
+4. Push lên branch `(git push origin support/newdonggop)`
 5. Tạo Pull Request
 
 ## **Liên hệ**
