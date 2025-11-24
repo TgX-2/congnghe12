@@ -30,13 +30,15 @@ congnghe12
 ├── media
 │   └── image
 │       ├── logo.ico
-│       └── thongtin_avt1.jpg
+│       ├── thongtin_avt1.jpg
+│       └── thongtin_avt2.png
 ├── style_index.css
 ├── subpage
 │   ├── cauhoi.html
 │   ├── diode.html
 │   ├── ic.html
 │   ├── style_thongtin.css
+│   ├── script_thongtin.js
 │   ├── thongtin.html
 │   ├── thuchanh.html
 │   └── transistor.html

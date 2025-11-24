@@ -19,3 +19,14 @@
 
 ### Fixed
 ### Removed
+
+## [3-24-11-2025] - 24/11/2025
+### Added
+
+### Changed
+- Thông tin:
+    * Thêm phần giới thiệu Bùi Đình Lộc.
+    * Thêm chuyển động mượt mà
+
+### Fixed
+### Removed
