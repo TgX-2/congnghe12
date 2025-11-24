@@ -3,6 +3,7 @@
 ## **Mục lục**
 - [Mô tả](#mô-tả)
 - [Demo](#demo)
+- [Cấu trúc](#cấu-trúc)
 - [Cài đặt](#cài-đặt)
 - [Đóng góp](#đóng-góp)
 - [Liên hệ](#-liên-hệ)
@@ -18,6 +19,29 @@
 - Link trang web live: [https://buidinhloc.github.io](https://buidinhloc.github.io) 
 
 ---
+
+## **Cấu trúc**
+
+congnghe12
+├── .git
+├── README.md
+├── changelog.md
+├── index.html
+├── media
+│   └── image
+│       ├── logo.ico
+│       └── thongtin_avt1.jpg
+├── style_index.css
+├── subpage
+│   ├── cauhoi.html
+│   ├── diode.html
+│   ├── ic.html
+│   ├── style_thongtin.css
+│   ├── thongtin.html
+│   ├── thuchanh.html
+│   └── transistor.html
+└── support
+
 
 ## **Cài đặt**
 Hướng dẫn cài đặt:
