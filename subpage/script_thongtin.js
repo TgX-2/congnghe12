@@ -19,3 +19,4 @@ wrapper.addEventListener("wheel", (e) => {
         isScrolling = false;
     }, 700);
 }, { passive: false });
+

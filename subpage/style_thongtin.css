@@ -20,6 +20,13 @@ body, html {
     scroll-snap-align: start;
 }
 
+.container3,
+.container4, 
+.container5 {
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 15px;
+}
 
 /* ---------- IMG ---------- */
 .left1 img,
@@ -60,4 +67,74 @@ body, html {
 .rigbom-para p {
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+.code-block {
+    position: relative;
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+pre {
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: white;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.container5 li { 
+    padding: 3px;
+}
+
+code {
+    background: #787a7c;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    color: #c9d1d9;
+}
+
+
+.container5 {
+    position: relative;
+}
+.footer {
+    position: absolute;   /* luôn ở dưới màn hình */
+    bottom: 10px;         /* cách đáy 0px */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff; /* tuỳ chọn */
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+
+    transition: background-color 0.5s ease-in-out;
+}
+
+.footer-img {
+    height: 40px;
+    width: auto;
+}
+
+.footer:hover {
+    background-color: #000000;
+
+}
+
+#secret {
+    color: white;
+    transition: color 0.5s ease-in-out;
 }

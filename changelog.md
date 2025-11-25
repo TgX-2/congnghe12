@@ -30,3 +30,16 @@
 
 ### Fixed
 ### Removed
+
+## [1-25-11-2025] - 25/11/2025
+### Added
+
+### Changed
+- Thông tin:
+    * Thêm về trang chủ
+    * Thêm Readme.md
+- Trang chủ:
+    * Thêm background chuyển động (4 ảnh)
+
+### Fixed
+### Removed

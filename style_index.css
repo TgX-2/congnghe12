@@ -7,7 +7,7 @@
 
 .navbar {
     width: 100%;
-    padding: 15px 15px;
+    padding: 15px 15px 15px 15px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -24,9 +24,71 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 18px;
-    transition: 0.2s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
     color: #ffffff;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: -2;
+}
+
+.bg.active {
+  opacity: 1;
+}
+
+.bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.photo-info {
+  position: fixed;
+  bottom: 5px;
+  left: 20px; 
+  color: #0f1738;
+  text-align: left;
+  text-shadow: 1px 1px 2px #ffffff;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: -1;
+}
+
+#name {
+}
+
+#descript {
+    font-style: italic;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.photo-info.visible {
+  opacity: 1;
+}
+
+
+.head {
+  margin-right: 10px;
+}
+
+.para {
+  margin-left: 10px;
+  margin-top: 10px;
 }
