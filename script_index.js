@@ -17,7 +17,6 @@ const info = [
   { name: "Diode ổn áp", descript: "Ok, ổn áp"}
 ];
 
-// Ảnh đầu tiên
 bg1.style.backgroundImage = `url('media/image/index_bg${current}.jpg')`;
 updateInfo(current);
 
@@ -32,8 +31,6 @@ function updateInfo(index) {
 
 function changeBackground() {
   const next = current + 1 > totalBackgrounds ? 1 : current + 1;
-
-  // Sửa đường dẫn sai
   const newImage = `url('media/image/index_bg${next}.jpg')`;
 
   if (showingFirst) {
@@ -52,3 +49,26 @@ function changeBackground() {
 }
 
 setInterval(changeBackground, 5000);
+
+
+const pages = [
+  "subpage/diode.html",
+  "subpage/transistor.html",
+  "subpage/ic.html",
+  "subpage/diode.html"
+];
+
+document.getElementById("next-page").addEventListener("click", function () {
+  window.location.href = pages[current - 1];
+});
+
+const btn = document.getElementById("next-page");
+const backgrounds = document.querySelectorAll(".bg");
+
+btn.addEventListener("mouseenter", () => {
+  backgrounds.forEach(bg => bg.classList.add("bright"));
+});
+
+btn.addEventListener("mouseleave", () => {
+  backgrounds.forEach(bg => bg.classList.remove("bright"));
+});

@@ -6,13 +6,14 @@ body, html {
     font-family: 'JetBrains Mono', monospace;
 }
 
-/* --- quan trọng nhất: scroll theo trang --- */
+/* --- scrolling theo trang --- */
 .wrapper {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
 
+/* --- CONTAINER --- */
 .container1,
 .container2 {
     height: 100vh;
@@ -36,7 +37,6 @@ body, html {
     object-fit: contain;
     display: block;
 }
-
 
 /* ---------- RIGHT CONTENT ---------- */
 .right1, .right2 {
@@ -69,9 +69,7 @@ body, html {
     font-family: 'Courier New', Courier, monospace;
 }
 
-
-
-
+/* ---------- CODE BLOCK ---------- */
 .code-block {
     position: relative;
     background: #161b22;
@@ -103,23 +101,25 @@ code {
     color: #c9d1d9;
 }
 
-
+/* ---------- FOOTER ---------- */
 .container5 {
     position: relative;
 }
+
 .footer {
-    position: absolute;   /* luôn ở dưới màn hình */
-    bottom: 10px;         /* cách đáy 0px */
+    position: absolute;
+    bottom: 10px;
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: #ffffff; /* tuỳ chọn */
-    padding: 15px 0;
 
     display: flex;
     justify-content: center;
     align-items: left;
     gap: 20px;
+
+    background-color: #ffffff;
+    padding: 15px 0;
 
     transition: background-color 0.5s ease-in-out;
 }
@@ -131,10 +131,28 @@ code {
 
 .footer:hover {
     background-color: #000000;
-
 }
 
 #secret {
     color: white;
     transition: color 0.5s ease-in-out;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------- FIX QUAN TRỌNG NHẤT: HEADER LUÔN HIỆN -------------- */
+/* ------------------------------------------------------------------ */
+
+.header {
+    position: fixed !important;    /* bắt buộc đứng trên viewport */
+    top: 0;
+    left: 0;
+    z-index: 999999 !important;    /* đủ lớn để không ai che */
+    background: transparent;
+    padding: 10px;
+    width: auto;
+}
+
+.header img {
+    height: 50px;
+    width: auto;
 }

@@ -43,3 +43,17 @@
 
 ### Fixed
 ### Removed
+
+## [1-26-11-2025] - 26/11/2025
+### Added
+
+### Changed
+- Thông tin:
+    * Có nút trở về ở mọi trang
+    
+- Trang chủ:
+    * Thêm hiệu ứng ảo lòi
+    * Thêm nút "Tìm hiểu"
+
+### Fixed
+### Removed

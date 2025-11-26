@@ -54,6 +54,10 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.3);
+  transition: background 1s ease-in-out;
+}
+.bg.bright::after {
+  background: rgba(0, 0, 0, 0);
 }
 
 .photo-info {
@@ -67,9 +71,6 @@
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
   z-index: -1;
-}
-
-#name {
 }
 
 #descript {
@@ -91,4 +92,67 @@
 .para {
   margin-left: 10px;
   margin-top: 10px;
+}
+
+
+button {
+    position: fixed; 
+    bottom: 10px;   
+    right: 10px;    
+
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: flex-end;    
+text-shadow: none;
+    width: 50ch;
+    height: 20ch;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    transition: 
+        background-color 0.5s ease, 
+        width 0.5s ease, 
+        height 0.5s ease,
+        text-shadow 1s ease-in-out;
+    padding: 10px; 
+    border: none;
+    
+    border-radius: 0 0 15px 0;
+  
+}
+
+
+button:hover {
+    width: 30vw;
+    height: 30vh;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+button:hover p {
+text-shadow: 1px 1px 2px #ffffff;
+}
+
+
+.btn {
+    position: fixed;
+
+    /* width: 200px;
+    height: 100px; */
+    padding: 10px;
+
+    /* color: rgb(0, 0, 0); */
+    border: none;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    -webkit-mask-image: linear-gradient(to bottom right, rgba(0,0,0,0) 30%, rgba(0,0,0,1) 30%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+
+    mask-image: linear-gradient(to bottom right, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
 }
