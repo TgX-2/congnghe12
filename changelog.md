@@ -22,38 +22,48 @@
 
 ## [3-24-11-2025] - 24/11/2025
 ### Added
-
-### Changed
 - Thông tin:
     * Thêm phần giới thiệu Bùi Đình Lộc.
     * Thêm chuyển động mượt mà
 
+### Changed
 ### Fixed
 ### Removed
 
 ## [1-25-11-2025] - 25/11/2025
 ### Added
-
-### Changed
 - Thông tin:
     * Thêm về trang chủ
     * Thêm Readme.md
 - Trang chủ:
     * Thêm background chuyển động (4 ảnh)
 
+### Changed
 ### Fixed
 ### Removed
 
 ## [1-26-11-2025] - 26/11/2025
 ### Added
+- Trang chủ:
+    * Thêm hiệu ứng ảo lòi
+    * Thêm nút "Tìm hiểu"
 
 ### Changed
 - Thông tin:
     * Có nút trở về ở mọi trang
-    
-- Trang chủ:
-    * Thêm hiệu ứng ảo lòi
-    * Thêm nút "Tìm hiểu"
+
+### Fixed
+### Removed
+
+## [1-29-11-2025] - 29/11/2025
+### Added
+- Tất cả subpage:
+    * Có nút bông hoa để trở về
+- Thêm logo bông hoa
+
+### Changed
+- Thông tin:
+    * Sửa vị trí bông hoa
 
 ### Fixed
 ### Removed
