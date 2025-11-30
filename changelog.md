@@ -67,3 +67,14 @@
 
 ### Fixed
 ### Removed
+
+## [1-30-11-2025] - 30/11/2025
+### Added
+- Trước khi vào từng subpage thì sẽ có hiệu ứng
+- Tất cả các trang đều có nút trở về
+
+### Changed
+- Sửa cấu trúc lưu trữ, thư mục
+
+### Fixed
+### Removed

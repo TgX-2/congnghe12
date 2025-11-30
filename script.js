@@ -52,10 +52,10 @@ setInterval(changeBackground, 5000);
 
 
 const pages = [
-  "subpage/diode.html",
-  "subpage/transistor.html",
-  "subpage/ic.html",
-  "subpage/diode.html"
+  "subpage/diode/index.html",
+  "subpage/transistor/index.html",
+  "subpage/ic/index.html",
+  "subpage/diode/index.html"
 ];
 
 document.getElementById("next-page").addEventListener("click", function () {
@@ -72,3 +72,12 @@ btn.addEventListener("mouseenter", () => {
 btn.addEventListener("mouseleave", () => {
   backgrounds.forEach(bg => bg.classList.remove("bright"));
 });
+
+
+const overlay = document.getElementById('pageTransition');
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        overlay.classList.add('hide'); 
+    }, 2000);
+});
+

@@ -6,14 +6,12 @@ body, html {
     font-family: 'JetBrains Mono', monospace;
 }
 
-/* --- scrolling theo trang --- */
 .wrapper {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
 
-/* --- CONTAINER --- */
 .container1,
 .container2 {
     height: 100vh;
@@ -30,7 +28,6 @@ body, html {
     padding: 15px;
 }
 
-/* ---------- IMG ---------- */
 .left1 img,
 .left2 img {
     height: 100vh;
@@ -39,7 +36,6 @@ body, html {
     display: block;
 }
 
-/* ---------- RIGHT CONTENT ---------- */
 .right1, .right2 {
     position: relative;
     flex: 1;
@@ -70,7 +66,6 @@ body, html {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* ---------- CODE BLOCK ---------- */
 .code-block {
     position: relative;
     background: #161b22;
@@ -102,7 +97,6 @@ code {
     color: #c9d1d9;
 }
 
-/* ---------- FOOTER ---------- */
 .container5 {
     position: relative;
 }
@@ -139,15 +133,12 @@ code {
     transition: color 0.5s ease-in-out;
 }
 
-/* ------------------------------------------------------------------ */
-/* ------------- FIX QUAN TRỌNG NHẤT: HEADER LUÔN HIỆN -------------- */
-/* ------------------------------------------------------------------ */
 
 .header {
-    position: fixed !important;    /* bắt buộc đứng trên viewport */
+    position: fixed !important;  
     top: 0;
     right: 0;
-    z-index: 999999 !important;    /* đủ lớn để không ai che */
+    z-index: 1 !important;   
     background: transparent;
     padding: 10px;
     width: auto;
@@ -157,4 +148,44 @@ code {
     padding: 10px;
     height: 40px;
     width: auto;
+}
+
+
+.page-transition {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1; 
+  transition: opacity 1s ease;
+}
+
+.page-transition span {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Helvetica;
+  animation: fadeInOut 4s forwards;
+  padding: 10px;
+}
+.page-transition p {
+    font-size: 1rem;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInOut 4s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(0.8);}
+  50% { opacity: 1; transform: scale(1);}
+  100% { opacity: 0; transform: scale(1.2);}
+}
+
+
+.page-transition.hide {
+  opacity: 0;
+  pointer-events: none; 
 }
